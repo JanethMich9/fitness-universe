@@ -1,0 +1,404 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Roboto",sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1em;}
+
+.container{
+    text-decoration: antiquewhite;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.color-acento{color:dimgrey;}
+
+header{
+    margin-top: 10px;
+    background-color:white;
+}
+
+header .logo{
+    margin-left: 80pxs;
+    align-items:center;
+    margin: 0%;
+    padding: 25px 30px;
+    font-weight:bold;
+    color:dimgrey;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 30px;
+}
+ header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color:dimgrey;
+ }
+
+ header a:hover{
+    color:coral;
+ }
+
+ #hero{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    flex-direction:column;
+    width: 100%;
+    height:600px;
+    color:rgb(245, 245, 245);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: #bc4e9c;  /* fallback for old browsers */
+    background: #c31432;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(275, 66%, 13%, 0.572), hwb(350 8% 24% / 0.406)), url(/media/equipo.jpg);
+    background: linear-gradient(to right, rgba(35, 10, 54, 0.519), hwb(350 8% 24% / 0.582)), url(/media/equipo.jpg);
+    border-radius: 15px;
+ }
+
+ .img{
+    width: 1180px;
+    height: 753px;
+    border-radius: 15px;
+    flex-direction: column;
+
+ }
+ 
+ .wave{
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+ }
+
+ .btn-regresa{
+    position:fixed;
+    background-color:transparent;
+    padding: 15px;
+    text-decoration:none;
+ }
+
+#quienes-somos{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    flex-direction:column;
+    height:90vh;
+    color:rgb(245, 245, 245);
+    background-image: url("/media/somos.jpg");
+}
+
+.color-acento{
+position:unset;
+padding: 300px;
+margin: 10px;
+}
+
+#nuestros-productos{
+    color: black;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#nuestros-productos .container{
+    padding: 0px 0px;
+}
+
+#nuestros-productos h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#nuestros-productos h3{
+    color: white;
+}
+
+#nuestros-productos p{
+    display:none;
+}
+
+#nuestros-productos .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 100px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image:url("/media/caballero1.jpg");
+}
+
+.carta:nth-child(2){
+    background-image: url("/media/Dama.jpg");
+}
+
+.carta:nth-child(3){
+    background-image: url("/media/niño.jpg");
+}
+
+.carta:nth-child(4){
+    background-image: url("/media/niña.jpg");
+}
+
+.hover-galeria{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    transform: scale(0);
+    background: transparent;
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.carta:hover .hover-galeria{
+    transform: scale(1);
+}
+
+.contact{
+    padding: 50px 10px;
+    margin: 25px;
+}
+.titulo-final{
+    margin: 0;
+    text-align:justify;
+    height: 80uvh;
+    padding: 10px;
+    color:dimgrey;
+}
+
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo{
+    color: dimgrey;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.ropa-de-caballero{
+    background: #f2f2f2;
+}
+
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-ca{
+    width: 24%;
+    margin-bottom: 25px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    border-radius: 15px;
+}
+
+.imagen-ca > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.imagen-ca:hover .hover-galeria{
+    transform: scale(1);
+}
+
+.titulo-final{
+    margin: 20px 0 0 0;
+    text-align: center;
+    font-size: 24px;
+    padding: 10px;
+    color:dimgrey;
+}
+
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo-da{
+    color: dimgrey;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.ropa-de-dama{
+    background: #f2f2f2;
+}
+
+.galeria-dama{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-da{
+    width: 24%;
+    margin-bottom: 25px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    border-radius: 15px;
+}
+
+.imagen-da > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.imagen-da:hover .hover-galeria{
+    transform: scale(1);
+}
+
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo-no{
+    color: dimgrey;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.ropa-de-niños{
+    background: #f2f2f2;
+}
+
+.galeria-niño{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-no{
+    width: 24%;
+    margin-bottom: 25px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    border-radius: 15px;
+}
+
+.imagen-no > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.imagen-no:hover .hover-galeria{
+    transform: scale(1);
+}
+
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo-ni{
+    color: dimgrey;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.ropa-de-niña{
+    background: #f2f2f2;
+}
+
+.galeria-niña{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-ni{
+    width: 24%;
+    margin-bottom: 25px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    border-radius: 15px;
+}
+
+.imagen-ni > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.imagen-ni:hover .hover-galeria{
+    transform: scale(1);
+}
+
+@media(max-width:767px){
+
+}
+
+@media(min-width:768px) and (max-width: 990px){
+    
+}
+
+@media(min-width:991px){
+    
+}
+
